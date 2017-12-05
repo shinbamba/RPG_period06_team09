@@ -74,6 +74,7 @@ public class YoRPG
 
     //instantiate the player's character
     pat = new Protagonist( name );
+System.out.print(pat);
 
   }//end newGame()
 
