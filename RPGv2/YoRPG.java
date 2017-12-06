@@ -51,6 +51,7 @@ public class YoRPG
     =============================================*/
   public void newGame()
   {
+    int i = 1;
     String s;
     String name = "";
     s = "~~~ Welcome to Ye Olde RPG! ~~~\n";
@@ -96,7 +97,22 @@ public class YoRPG
 		System.out.println("Congrats! You have chosen the nimble archer.");
 	}
     //instantiate the player's character
+<<<<<<< HEAD
     // pat = new Protagonist( name );
+=======
+    try {
+        System.out.println( "\nChoose a class!" );
+        System.out.println( "\t1: Knight.\n\t2: Mage.\n\t3: Archer" );
+        i = Integer.parseInt( in.readLine() );
+    }
+    catch ( IOException e ) { }
+    if ( i == 1 )
+        pat = new Knight( name );
+    else if ( i == 2)
+        pat = new Mage( name );
+    else
+        pat = new Archer( name );
+>>>>>>> 279bc97e35b2135ded6820f8f256ace5acbbdac8
 
   }//end newGame()
 
