@@ -74,7 +74,6 @@ public class YoRPG
 
     //instantiate the player's character
     pat = new Protagonist( name );
-System.out.print(pat);
 
   }//end newGame()
 
@@ -153,7 +152,7 @@ System.out.print(pat);
   {
     // As usual, uncomment progressively in tiny steps
 
-    // //loading...
+    // loading...
     YoRPG game = new YoRPG();
 
     int encounters = 0;

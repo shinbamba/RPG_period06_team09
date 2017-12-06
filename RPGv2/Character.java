@@ -24,4 +24,11 @@ public class Character {
         target.lowerHP(damage);
     return damage;
     }
+    
+    public String toString() {
+        return  "Health  :" + health + System.lineSeparator() +
+                "Strength:" + strength + System.lineSeparator() +
+                "Defense :" + defense + System.lineSeparator() + 
+                "Rating  :" + attackRating + System.lineSeparator();
+    }
 }
