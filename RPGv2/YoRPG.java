@@ -97,9 +97,9 @@ public class YoRPG
 		System.out.println("Congrats! You have chosen the nimble archer.");
 	}
     //instantiate the player's character
-<<<<<<< HEAD
+
     // pat = new Protagonist( name );
-=======
+
     try {
         System.out.println( "\nChoose a class!" );
         System.out.println( "\t1: Knight.\n\t2: Mage.\n\t3: Archer" );
@@ -112,7 +112,7 @@ public class YoRPG
         pat = new Mage( name );
     else
         pat = new Archer( name );
->>>>>>> 279bc97e35b2135ded6820f8f256ace5acbbdac8
+
 
   }//end newGame()
 
