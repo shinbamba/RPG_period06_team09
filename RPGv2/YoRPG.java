@@ -22,6 +22,7 @@ public class YoRPG
   private int moveCount;
   private boolean gameOver;
   private int difficulty;
+  private int type;
 
   private InputStreamReader isr;
   private BufferedReader in;
@@ -71,9 +72,31 @@ public class YoRPG
     try {
 	    name = in.readLine();
     } catch ( IOException e ) { }
+	
+	s = "Choose a class: \n";
+	s += "\t0: Mage\n";
+	s += "\t1: Knight\n";
+	s += "\t2: Archer\n";
+	System.out.println( s );
 
+	try {
+	    type = Integer.parseInt( in.readLine() );
+    } catch ( IOException e ) { }
+	//create the character with chosen type
+	if (type == 0){
+		pat = new Mage(name);
+		System.out.println("Congrats! You have chosen the cunning mage.");
+	}
+	else if (type == 1){
+		pat = new Knight(name);
+		System.out.println("Congrats! You have chosen the chivalrous knight.");
+	}
+	else {
+		pat = new Archer(name);
+		System.out.println("Congrats! You have chosen the nimble archer.");
+	}
     //instantiate the player's character
-    pat = new Protagonist( name );
+    // pat = new Protagonist( name );
 
   }//end newGame()
 
@@ -92,9 +115,9 @@ public class YoRPG
     if ( Math.random() >= ( difficulty / 3.0 ) )
 	    System.out.println( "\nNothing to see here. Move along!" );
     else {
-	    System.out.println( "\nLo, yonder monster approacheth!" );
+	    System.out.println( "\nLo, a teacherous goblin approacheth!" );
 
-	    smaug = new Monster();
+	    smaug = new Goblin();
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
 
