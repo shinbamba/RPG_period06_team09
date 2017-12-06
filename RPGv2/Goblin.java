@@ -1,7 +1,7 @@
 public class Goblin extends Monster {
     
 	public Goblin(){
-		super(50, 150, 30, 1.5);
+		super(50, 75, 30, .75);
 		type = "Goblin";
 	}
 

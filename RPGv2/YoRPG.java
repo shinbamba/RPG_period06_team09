@@ -50,6 +50,7 @@ public class YoRPG
     =============================================*/
   public void newGame()
   {
+    int i = 1;
     String s;
     String name = "";
     s = "~~~ Welcome to Ye Olde RPG! ~~~\n";
@@ -73,7 +74,18 @@ public class YoRPG
     } catch ( IOException e ) { }
 
     //instantiate the player's character
-    pat = new Protagonist( name );
+    try {
+        System.out.println( "\nChoose a class!" );
+        System.out.println( "\t1: Knight.\n\t2: Mage.\n\t3: Archer" );
+        i = Integer.parseInt( in.readLine() );
+    }
+    catch ( IOException e ) { }
+    if ( i == 1 )
+        pat = new Knight( name );
+    else if ( i == 2)
+        pat = new Mage( name );
+    else
+        pat = new Archer( name );
 
   }//end newGame()
 
@@ -94,7 +106,7 @@ public class YoRPG
     else {
 	    System.out.println( "\nLo, yonder monster approacheth!" );
 
-	    smaug = new Monster();
+	    smaug = new Goblin();
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
 

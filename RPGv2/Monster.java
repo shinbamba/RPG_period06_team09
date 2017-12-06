@@ -1,5 +1,6 @@
 public class Monster extends Character {
 	protected String type;
+    
 	
     public Monster(int hp, int str, int def, double atkRating) {
         health = hp;
