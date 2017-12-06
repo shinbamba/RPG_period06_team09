@@ -80,22 +80,6 @@ public class YoRPG
 	s += "\t2: Archer\n";
 	System.out.println( s );
 
-	try {
-	    type = Integer.parseInt( in.readLine() );
-    } catch ( IOException e ) { }
-	//create the character with chosen type
-	if (type == 0){
-		pat = new Mage(name);
-		System.out.println("Congrats! You have chosen the cunning mage.");
-	}
-	else if (type == 1){
-		pat = new Knight(name);
-		System.out.println("Congrats! You have chosen the chivalrous knight.");
-	}
-	else {
-		pat = new Archer(name);
-		System.out.println("Congrats! You have chosen the nimble archer.");
-	}
     //instantiate the player's character
 
     // pat = new Protagonist( name );
