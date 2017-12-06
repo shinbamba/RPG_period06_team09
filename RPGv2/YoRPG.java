@@ -74,12 +74,7 @@ public class YoRPG
 	    name = in.readLine();
     } catch ( IOException e ) { }
 	
-	s = "Choose a class: \n";
-	s += "\t0: Mage\n";
-	s += "\t1: Knight\n";
-	s += "\t2: Archer\n";
-	System.out.println( s );
-
+	
     //instantiate the player's character
 
     // pat = new Protagonist( name );
