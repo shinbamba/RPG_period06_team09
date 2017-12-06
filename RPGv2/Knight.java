@@ -6,10 +6,11 @@ public class Knight extends Protagonist {
         strength = 100;
         defense = 25;
         attackRating = .5;
+        type = "Knight";
     }
     
     public String toString() {
-        return "Class   :Knight" + System.lineSeparator() +
+        return "Type    :" + type + System.lineSeparator() +
                 super.toString();
     }
         

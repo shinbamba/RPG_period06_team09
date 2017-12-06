@@ -22,8 +22,9 @@ public class Character {
     public int attack(Character target) {
         int damage = (int)(strength * attackRating - target.getDefense());
         target.lowerHP(damage);
-    return damage;
+        return damage;
     }
+<<<<<<< HEAD
     public String toString() {
 
         return  "Health  :" + health + System.lineSeparator() +
@@ -32,4 +33,15 @@ public class Character {
                 "Rating  :" + attackRating + System.lineSeparator();
 
 	}
+=======
+
+	
+	public String toString() {
+            return  "Health  :" + health + System.lineSeparator() +
+                    "Strength:" + strength + System.lineSeparator() +
+                    "Defense :" + defense + System.lineSeparator() + 
+                    "Rating  :" + attackRating + System.lineSeparator();
+    }
+>>>>>>> 671994485b74527413a1652791b1c305e7d875e5
 }
+
