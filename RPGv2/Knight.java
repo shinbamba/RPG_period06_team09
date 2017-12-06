@@ -6,7 +6,7 @@ public class Knight extends Protagonist {
         strength = 100;
         defense = 25;
         attackRating = .5;
-        type = "Knight"
+        type = "Knight";
     }
     
     public String toString() {
