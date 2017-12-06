@@ -91,7 +91,7 @@ public class YoRPG
         pat = new Mage( name );
     else
         pat = new Archer( name );
-
+    System.out.print(pat);
 
   }//end newGame()
 
