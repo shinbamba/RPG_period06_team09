@@ -6,10 +6,11 @@ public class Mage extends Protagonist {
         strength = 80;
         defense = 15;
         attackRating = .9;
+        type = "Mage";
     }
     
     public String toString() {
-        return "Class   :Mage" + System.lineSeparator() +
+        return "Type    :" + type + System.lineSeparator() +
                 super.toString();
     }
     

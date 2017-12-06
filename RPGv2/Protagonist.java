@@ -1,5 +1,6 @@
 public class Protagonist extends Character {
-	private String name;
+	protected String name;
+    protected String type;
 	
 	public Protagonist(String charName) {
         name = charName;
@@ -22,6 +23,7 @@ public class Protagonist extends Character {
     
     public String toString() {
         return  "Name    :" + charName + System.lineSeparator() +
+                "Type    :" + type + Syste.lineSeparator() +
                 super.toString();
     }
                 
