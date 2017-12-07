@@ -31,7 +31,7 @@ health | strength | defense | attackRating | type
 250 | 50 | 15 | 1 | Ogre
 125 | 100 | 15 | .5 | Zombie
 
-YoROG class
+YoRPG class
 
 Difficulty of game ranges from 1-3.
 Allows user to make name and choose class of knight, mage, or archer.
