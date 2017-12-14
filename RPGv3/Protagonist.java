@@ -6,16 +6,9 @@ public abstract class Protagonist extends Character {
         name = charName;
     }
 
-   	public void specialize() {
-     	defense -= 10;
-  		strength += 10;
-   	}
+   	public abstract void specialize();
 
-    public void normalize() {
-       	defense += 10;
-       	strength -= 10;
-   	}
-
+    public abstract void normalize();
 	
    	public String getName() {
     	return name;

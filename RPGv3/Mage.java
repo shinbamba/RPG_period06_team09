@@ -18,4 +18,12 @@ public class Mage extends Protagonist {
                 "Rating  :" + attackRating + System.lineSeparator();
     }
     
+	public void specialize(){ 
+		defense -= 5; 
+		strength += 5; 
+	} 
+	public void normalize() { 
+		defense += 5; 
+		strength -= 5; 
+	}
 }

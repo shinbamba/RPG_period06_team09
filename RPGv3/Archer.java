@@ -18,4 +18,13 @@ public class Archer extends Protagonist {
                 "Rating  :" + attackRating + System.lineSeparator();
     }
     
+	public void specialize(){ 
+		defense -= 15; 
+		strength += 15; 
+	} 
+	public void normalize() { 
+		defense += 15; 
+		strength -= 15;
+	}
+	
 }
