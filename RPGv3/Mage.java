@@ -18,6 +18,11 @@ public class Mage extends Protagonist {
                 "Rating  :" + attackRating + System.lineSeparator();
     }
     
+    // Mage.java:1: error: Mage is not abstract and does not override abstract method toString() in Protagonist
+// public class Mage extends Protagonist {
+       // ^
+// 1 error
+    
 	public void specialize(){ 
 		defense -= 5; 
 		strength += 5; 
