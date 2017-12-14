@@ -10,8 +10,12 @@ public class Mage extends Protagonist {
     }
     
     public String toString() {
-        return "Type    :" + type + System.lineSeparator() +
-                super.toString();
+        return  "Type    :" + type + System.lineSeparator() +
+                "Name    :" + name + System.lineSeparator() +
+                "Health  :" + health + System.lineSeparator() +
+                "Strength:" + strength + System.lineSeparator() +
+                "Defense :" + defense + System.lineSeparator() + 
+                "Rating  :" + attackRating + System.lineSeparator();
     }
     
 }
