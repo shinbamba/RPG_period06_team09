@@ -1,4 +1,4 @@
-public class Protagonist extends Character {
+public abstract class Protagonist extends Character {
 	protected String name;
     protected String type;
 	
@@ -21,13 +21,16 @@ public class Protagonist extends Character {
     	return name;
     }
     
-    public String toString() {
-        return  "Name    :" + name + System.lineSeparator() +
-
-                "Type    :" + type + System.lineSeparator() +
-
-                super.toString();
-    }
+    public abstract String toString();
+    
+    
+    // Protagonist.java:1: error: Protagonist is not abstract and does not override abstract method toString() in Protagonist
+// public class Protagonist extends Character {
+       // ^
+// Protagonist.java:24: error: abstract methods cannot have a body
+    // public abstract String toString() {
+                           // ^
+// 2 errors
                 
+    }
 
-}
